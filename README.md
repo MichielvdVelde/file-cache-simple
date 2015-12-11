@@ -41,8 +41,9 @@ const DEFAULT_OPTIONS = {
 
 # Changelog
 
-* v0.0.1 - 11 December 2015
-  * Initial commit
+* v0.0.1 - v0.0.2 - 11 December 2015
+  * (0.0.2) Add dependencies
+  * (0.0.1) Initial commit
 
 ## License
 

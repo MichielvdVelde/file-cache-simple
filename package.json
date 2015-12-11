@@ -1,0 +1,25 @@
+{
+  "name": "file-cache-simple",
+  "version": "1.0.0",
+  "description": "Simple file caching",
+  "main": "FileCacheSimple.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichielvdVelde/file-cache-simple.git"
+  },
+  "keywords": [
+    "file",
+    "cache",
+    "simple",
+    "caching"
+  ],
+  "author": "Michiel van der Velde <michiel@michielvdvelde.nl>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MichielvdVelde/file-cache-simple/issues"
+  },
+  "homepage": "https://github.com/MichielvdVelde/file-cache-simple#readme"
+}

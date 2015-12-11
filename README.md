@@ -10,11 +10,14 @@ npm i file-cache-simple
 
 # Use
 
+Every key is stored in its own file in `cacheDir`. You can set a `prefix` for the file name, see the options below.
+
 ```js
 let FileCacheSimple = require('file-cache-simple');
 let cache = new FileCacheSimple(); // see below for options
 
 // Store some data
+// In this case, 'sone data' is stored in cacheDir / prefix.key.json
 cache.set('key.name', 'some data');
 
 // And get some out

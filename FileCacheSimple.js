@@ -46,4 +46,9 @@ FileCacheSimple.prototype.get = function(key) {
 	});
 };
 
+FileCacheSimple.prototype.remove = function(key) {
+	let cacheFile = util.format('%s.%s.json', this._options.prefix, key);
+	this._fs.remove(cacheFile);
+};
+
 exports = module.exports = FileCacheSimple;

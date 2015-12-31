@@ -10,7 +10,8 @@ const DEFAULT_OPTIONS = {
 	'cacheDir': process.cwd() + '/cache',
 	'cacheExpire': 3600 * 1000, // 1hr
 	'prefix': 'cs',
-	'fixCacheExpire': false
+	'fixCacheExpire': false,
+	'rejectOnNull': false
 };
 
 let FileCacheSimple = function(options) {
@@ -36,6 +37,8 @@ FileCacheSimple.prototype.get = function(key) {
 		self._fs.readAsync(cacheFile, 'jsonWithDates')
 			.then(function(cache) {
 				if(!cache || cache === null) {
+					if(self._options.rejectOnNull)
+						return reject();
 					return resolve(null);
 				}
 

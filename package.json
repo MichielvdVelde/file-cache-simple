@@ -1,6 +1,6 @@
 {
   "name": "file-cache-simple",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Simple file caching",
   "main": "FileCacheSimple.js",
   "scripts": {
@@ -24,6 +24,6 @@
   "homepage": "https://github.com/MichielvdVelde/file-cache-simple#readme",
   "dependencies": {
     "extend": "^3.0.0",
-    "fs-jetpack": "^0.7.0"
+    "fs-jetpack": "^0.7.1"
   }
 }

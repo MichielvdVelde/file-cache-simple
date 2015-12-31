@@ -43,14 +43,19 @@ const DEFAULT_OPTIONS = {
 	'cacheDir': process.cwd() + '/cache',
 	'cacheExpire': 3600 * 1000, // 1hr
 	'prefix': 'cs', // cache files are prefixed with this
-	'fixCacheExpire': false
+	'fixCacheExpire': false,
+	'rejectOnNull': false
 };
 ```
 
 Is `fixCacheExpire` in the options is set to `true`, the active cache expiry time (either given through the settings or as the last argument to `set`) is stored in the JSON file as well and will be used to check if the cache is still fresh when `get()`ting it. This allows you to hve different expiry times for different keys.
 
+If `rejectOnNull` is set to `true`, the promise will be rejected instead of resolving with `null`.
+
 # Changelog
 
+* v0.0.4 - 31 December 2015
+  * Add `rejectOnNull` to default options
 * v0.0.3 - 14 December 2015
   * Add `fixCacheExpire` to `cache.set()` and default options
 * v0.0.1 - v0.0.2 - 11 December 2015

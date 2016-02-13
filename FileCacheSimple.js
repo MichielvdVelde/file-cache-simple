@@ -27,7 +27,7 @@ FileCacheSimple.prototype.set = function(key, value, fixCacheExpire) {
 	};
 	if(this._options.fixCacheExpire || fixCacheExpire)
 		cacheObj.cacheExpire = (fixCacheExpire) ? fixCacheExpire : this._options.cacheExpire;
-	this._fs.writeAsync(cacheFile, cacheObj);
+	return this._fs.writeAsync(cacheFile, cacheObj);
 };
 
 FileCacheSimple.prototype.get = function(key) {
@@ -55,7 +55,7 @@ FileCacheSimple.prototype.get = function(key) {
 
 FileCacheSimple.prototype.remove = function(key) {
 	let cacheFile = util.format('%s.%s.json', this._options.prefix, key);
-	this._fs.remove(cacheFile);
+	return this._fs.removeAsync(cacheFile);
 };
 
 exports = module.exports = FileCacheSimple;

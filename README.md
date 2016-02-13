@@ -54,6 +54,8 @@ If `rejectOnNull` is set to `true`, the promise will be rejected instead of reso
 
 # Changelog
 
+* v0.0.5 - 13 Januari 2016
+  * Return promises on remove and write, contributed by [gregorskii](https://github.com/gregorskii)
 * v0.0.4 - 31 December 2015
   * Add `rejectOnNull` to default options
 * v0.0.3 - 14 December 2015

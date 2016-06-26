@@ -45,6 +45,8 @@ FileCacheSimple.prototype.get = function(key) {
 				let currentTime = (new Date()).getTime();
 				let cacheExpire = (cache.cacheExpire) ? cache.cacheExpire : self._options.cacheExpire;
 				if(currentTime - cache.cachedOn >= cacheExpire) {
+					if(self._options.rejectOnNull)
+						return reject();
 					return resolve(null);
 				}
 				return resolve(cache.content);

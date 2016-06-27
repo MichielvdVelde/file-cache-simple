@@ -1,7 +1,6 @@
 "use strict";
 
 const jetpack = require('fs-jetpack');
-const extend = require('extend');
 
 const path = require('path');
 const util = require('util');
@@ -15,7 +14,7 @@ const DEFAULT_OPTIONS = {
 };
 
 let FileCacheSimple = function(options) {
-	this._options = (options) ? extend(true, DEFAULT_OPTIONS, options) : DEFAULT_OPTIONS;
+	this._options = Object.assign({}, DEFAULT_OPTIONS, options);
 	this._fs = jetpack.cwd(this._options.cacheDir);
 };
 

@@ -1,6 +1,6 @@
 {
   "name": "file-cache-simple",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Simple file caching",
   "main": "FileCacheSimple.js",
   "scripts": {
@@ -18,7 +18,8 @@
   ],
   "author": "Michiel van der Velde <michiel@michielvdvelde.nl>",
   "contributors": [{
-    "name": "gregorskii"
+    "name": "gregorskii",
+    "name": "TomTom101"
   }],
   "license": "MIT",
   "bugs": {

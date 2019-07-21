@@ -27,6 +27,6 @@
   },
   "homepage": "https://github.com/MichielvdVelde/file-cache-simple#readme",
   "dependencies": {
-    "fs-jetpack": "^0.7.1"
+    "fs-jetpack": "^2.2.2"
   }
 }
